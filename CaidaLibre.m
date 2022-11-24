@@ -22,7 +22,7 @@ function varargout = CaidaLibre(varargin)
 
 % Edit the above text to modify the response to help CaidaLibre
 
-% Last Modified by GUIDE v2.5 21-Nov-2022 12:58:24
+% Last Modified by GUIDE v2.5 23-Nov-2022 19:34:13
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -199,3 +199,14 @@ function btnLimpiar_Callback(hObject, eventdata, handles)
     set(handles.VFResultado,'String',"");
     set(handles.TBResultado,'String',"");
     set(handles.AlturaResultado,'String',"");
+
+
+% --- Executes on button press in togglebutton1.
+function togglebutton1_Callback(hObject, eventdata, handles)
+% hObject    handle to togglebutton1 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: get(hObject,'Value') returns toggle state of togglebutton1
+MenuFisica
+close(CaidaLibre)

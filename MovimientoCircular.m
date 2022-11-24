@@ -22,7 +22,7 @@ function varargout = MovimientoCircular(varargin)
 
 % Edit the above text to modify the response to help MovimientoCircular
 
-% Last Modified by GUIDE v2.5 22-Nov-2022 21:47:04
+% Last Modified by GUIDE v2.5 23-Nov-2022 19:29:57
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -357,3 +357,12 @@ function frecuencia_CreateFcn(hObject, eventdata, handles)
 if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
     set(hObject,'BackgroundColor','white');
 end
+
+
+% --- Executes on button press in pushbutton2.
+function pushbutton2_Callback(hObject, eventdata, handles)
+% hObject    handle to pushbutton2 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+MenuFisica
+close(MovimientoCircular)

@@ -61,12 +61,15 @@ varargout{1} = handles.output;
 % --- Executes on button press in btnCaida.
 function btnCaida_Callback(hObject, eventdata, handles)
 CaidaLibre
+close(MenuFisica)
 
 
 % --- Executes on button press in btnCircular.
 function btnCircular_Callback(hObject, eventdata, handles)
 MovimientoCircular
+close(MenuFisica)
 
 % --- Executes on button press in btnParabolico.
 function btnParabolico_Callback(hObject, eventdata, handles)
 prueba
+close(MenuFisica)

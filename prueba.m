@@ -22,7 +22,7 @@ function varargout = prueba(varargin)
 
 % Edit the above text to modify the response to help prueba
 
-% Last Modified by GUIDE v2.5 21-Nov-2022 14:59:07
+% Last Modified by GUIDE v2.5 23-Nov-2022 19:36:06
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -215,3 +215,14 @@ function txtXmax_CreateFcn(hObject, eventdata, handles)
 if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
     set(hObject,'BackgroundColor','white');
 end
+
+
+% --- Executes on button press in togglebutton1.
+function togglebutton1_Callback(hObject, eventdata, handles)
+% hObject    handle to togglebutton1 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: get(hObject,'Value') returns toggle state of togglebutton1
+MenuFisica
+close(Prueba)
